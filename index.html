@@ -100,29 +100,29 @@ analytics.track('Account Created')
 
 				<nav class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
-				    <li><a href="features.html" title="Features">Features</a></li>
+				    <li><a href="features.html" tooltip="Features">Features</a></li>
 
-                                    <li><a href="how-it-works.html" title="How It Works">How It Works </a></li>
-                                    <li><a href="pricing.html" title="Pricing">Pricing</a></li>
+                                    <li><a href="how-it-works.html" tooltip="How It Works">How It Works </a></li>
+                                    <li><a href="pricing.html" tooltip="Pricing">Pricing</a></li>
 	                               <li class="sub">
-							<a href="#" title="More">More</a>
+							<a href="#">More</a>
 							<ul>
 
-<li><a href="contact.html" title="Contact"><i class="icon fa fa-envelope"></i> Contact Us</a></li>
-<li><a href="about.html" title="About"><i class="icon fa fa-group"></i> The Team</a></li>
+<li><a href="contact.html"><i class="icon fa fa-envelope"></i> Contact Us</a></li>
+<li><a href="about.html"><i class="icon fa fa-group"></i> The Team</a></li>
 
-                                    <li><a href="/docs/index.html" title="API Documentation"><i class="icon fa fa-file"></i> API Docs</a></li>
-		<li><a href="blog.html" title="Our Blog"><i class="icon fa fa-rss"></i> Our Blog</a></li>
+                                    <li><a href="/docs/index.html"><i class="icon fa fa-file"></i> API Docs</a></li>
+		<li><a href="blog.html"><i class="icon fa fa-rss"></i> Our Blog</a></li>
 <li><a href="https://partners.elektropay.io" title="Partnership"><i class="icon fa fa-globe"></i> Partnerships</a></li>
-<li><a href="careers.html" title="Careers"><i class="icon fa fa-user"></i> We're Hiring!</a></li>
+<li><a href="careers.html"><i class="icon fa fa-user"></i> We're Hiring!</a></li>
 							</ul>
                                        </li>
 </ul>
 
 					<ul class="nav navbar-nav navbar-right">
-<li class="login"><a href="login.html" title="Login"><i class="icon fa fa-lock"></i> Login</a></li>
+<li class="login"><a href="#"  data-toggle="modal" data-target="#loginModal"><i class="icon fa fa-lock"></i> Login</a></li>
 					
-<li class="signup"><a href="signup.html" title="Apply Now"><i class="icon fa fa-pencil"></i>Sign Up</a></li>
+<li class="signup"><a href="#" data-toggle="modal" data-target="#signupModal"><i class="icon fa fa-pencil"></i>Sign Up</a></li>
 						</ul>
 				</nav>
 			</div>
@@ -572,7 +572,64 @@ analytics.track('Account Created')
 			</div>
 		</div>
 	</footer>
+	
+	<!-- MODALS -->
+	
+	<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="signupeModalLabel">Sign Up For Free</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="control-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Laim Account</button>
+      </div>
+    </div>
+  </div>
+</div>
 
+
+
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="loginModalLabel">Login Here</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="control-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
 	
 
 	<!-- JS -->
