@@ -426,16 +426,17 @@ body #a0-lock {
     bottom: 20px;
     cursor: pointer;
     display: none;
-    height: 70px;
+    height: 40px;
     position: fixed;
     right: 20px;
     text-indent: -9999px;
-    width: 70px;
+    width: 40px;
     z-index: 1;
 }
 
 
 #backtotop:hover{opacity:0.8;}<!--[if lte IE 6]>
-html{overflow-x:auto;overflow-y:hidden;}* html #backtotop{position:absolute;}<![endif]-->
+html{overflow-x:auto;overflow-y:hidden;}* html #backtotop{position:absolute;}
+<![endif]-->
 @media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){
     #backtotop{background:url(https://res.cloudinary.com/lmj6rf6tz/image/upload/v1442882914/backtotop2x_eq4idl.png) no-repeat center center;background-size:70px 70px;}}
