@@ -308,7 +308,7 @@ analytics.track('Account Created')
 					<div class="js-testimonials-carousel">
 						<div class="item">
 							<div class="col-xs-10 col-xs-offset-1">
-								<img src="http://res.cloudinary.com/lmj6rf6tz/image/upload/c_scale,w_80/v1442882775/168x168_mldqod.jpg" alt="#" width="80" height="80" class="image">
+								<img src="https://res.cloudinary.com/lmj6rf6tz/image/upload/c_scale,w_80/v1442882775/168x168_mldqod.jpg" alt="#" width="80" height="80" class="image">
 								<h3>Greg Smallwood</h3>
 								<h4>– Blackhorse Studio Ltd. - owner –</h4>
 								<p>Publishing your users stories abount your product can be usefull for your next clients. You can describe how your clients use your product to increase theirs busssinesses. Tempalte is ready to display information from your social media sites.
@@ -575,66 +575,6 @@ analytics.track('Account Created')
 	
 	<!-- MODALS -->
 	
-	<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title hidden" id="signupeModalLabel">Sign Up For Free</h4>
-      </div>
-      <div class="modal-body">
-     <div class="table">
-    <div class="cell">
-      <div class="content">
-        <!-- WIDGET -->
-        <div id="widget-container"></div>
-      </div>
-    </div>
-  </div>
-
-  <!--[if IE 8]>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/ie8/0.2.5/ie8.js"></script>
-  <![endif]-->
-
-  <!--[if lte IE 9]>
-  <script src="https://cdn.auth0.com/js/base64.js"></script>
-  <script src="https://cdn.auth0.com/js/es5-shim.min.js"></script>
-  <![endif]-->
-
-  <script src="https://cdn.auth0.com/js/lock-7.5.js"></script>
-
-  <script>
-    // Decode utf8 characters properly
-    var config = JSON.parse(decodeURIComponent(escape(window.atob('@@config@@'))));
-
-    var connection = config.connection;
-    var prompt = config.prompt;
-
-    var initializationOptions = {
-      assetsUrl:  config.assetsUrl,
-      cdn:        config.cdn
-    };
-
-    var lock = new Auth0Lock(config.clientID, config.auth0Domain, initializationOptions);
-    lock.show({
-      // icon:            '{YOUR_LOGO_URL}',
-      callbackURL:        config.callbackURL,
-      responseType:       config.callbackOnLocationHash ? 'token' : 'code',
-      dict:               config.dict,
-      connections:        connection ? [connection] : null,
-      rememberLastLogin:  !prompt,
-      container:          'widget-container',
-      authParams:         config.internalOptions
-    });
-  </script>
-      </div>
-      <div class="modal-footer hidden">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Laim Account</button>
-      </div>
-    </div>
-  </div>
-</div>
 
 
 
